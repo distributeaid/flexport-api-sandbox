@@ -1,0 +1,374 @@
+{
+  "_object": "/api/response",
+  "self": "https://api.flexport.com/shipment_legs?f.shipment.id=534738",
+  "version": 2,
+  "data": {
+    "_object": "/api/collections/paginated",
+    "prev": null,
+    "next": null,
+    "total_count": 4,
+    "data": [
+      {
+        "_object": "/shipment_leg",
+        "id": 5196940,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/534738",
+          "id": 534738
+        },
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "cargo_ready_date": null,
+        "additional_dates": {},
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_loading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "HKG - Hong Kong - Hong Kong",
+            "address": {
+              "_object": "/address",
+              "street_address": "Hong Kong",
+              "street_address2": null,
+              "city": "Hong Kong",
+              "state": null,
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": "HKHKG",
+              "timezone": "Asia/Hong_Kong",
+              "ref": "id-39800"
+            },
+            "details": [
+              {
+                "_object": "/air/port",
+                "port_code": null,
+                "iata_code": "HKG",
+                "icao_code": "VHHH"
+              },
+              {
+                "_object": "/trucking/port",
+                "port_code": null
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_unloading",
+            "customs_entry"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "LAX - Los Angeles - CA",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Los Angeles",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "90045-5803",
+              "unlocode": "USLAX",
+              "timezone": "America/Los_Angeles",
+              "ref": "id-41559"
+            },
+            "details": [
+              {
+                "_object": "/air/port",
+                "port_code": "2720",
+                "iata_code": "LAX",
+                "icao_code": "KLAX"
+              },
+              {
+                "_object": "/trucking/port",
+                "port_code": "2720"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "transportation_mode": "air",
+        "carrier_name": "FLXT Air",
+        "ocean_leg": null,
+        "air_leg": {
+          "_object": "/air/shipment_leg",
+          "iata_code": "FP",
+          "icao_code": "",
+          "flight_number": null,
+          "pieces": null
+        },
+        "trucking_leg": null,
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 5196941,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/534738",
+          "id": 534738
+        },
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "cargo_ready_date": null,
+        "additional_dates": {},
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "consolidation"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Flexport Hong Kong Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "Unit 153, 1/F, Airport Freight Forwarding Centre, 2 Chun Wan Road",
+              "street_address2": "香港新界离岛区骏运路2号，机场空运中心一楼153倉",
+              "city": "Chek Lap Kok",
+              "state": null,
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": "HKHKG",
+              "timezone": "Asia/Hong_Kong",
+              "ref": "id-124613"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_loading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "HKG - Hong Kong - Hong Kong",
+            "address": {
+              "_object": "/address",
+              "street_address": "Hong Kong",
+              "street_address2": null,
+              "city": "Hong Kong",
+              "state": null,
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": "HKHKG",
+              "timezone": "Asia/Hong_Kong",
+              "ref": "id-39800"
+            },
+            "details": [
+              {
+                "_object": "/air/port",
+                "port_code": null,
+                "iata_code": "HKG",
+                "icao_code": "VHHH"
+              },
+              {
+                "_object": "/trucking/port",
+                "port_code": null
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "cartage",
+          "pieces": null,
+          "container_legs": null
+        },
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 5196942,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/534738",
+          "id": 534738
+        },
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "cargo_ready_date": "2019-08-05",
+        "additional_dates": {
+          "cargo_ready_date": "2019-08-05"
+        },
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "origin_address"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "CVG1",
+            "address": {
+              "_object": "/address",
+              "street_address": "1155 Worldwide Blvd.",
+              "street_address2": null,
+              "city": "Hebron",
+              "state": "KY",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "41048",
+              "unlocode": null,
+              "timezone": "America/New_York",
+              "ref": "id-22003"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "consolidation"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Flexport Hong Kong Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "Unit 153, 1/F, Airport Freight Forwarding Centre, 2 Chun Wan Road",
+              "street_address2": "香港新界离岛区骏运路2号，机场空运中心一楼153倉",
+              "city": "Chek Lap Kok",
+              "state": null,
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": "HKHKG",
+              "timezone": "Asia/Hong_Kong",
+              "ref": "id-124613"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "cartage",
+          "pieces": null,
+          "container_legs": null
+        },
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 5196943,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/534738",
+          "id": 534738
+        },
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "cargo_ready_date": null,
+        "additional_dates": {},
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_unloading",
+            "customs_entry"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "LAX - Los Angeles - CA",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Los Angeles",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "90045-5803",
+              "unlocode": "USLAX",
+              "timezone": "America/Los_Angeles",
+              "ref": "id-41559"
+            },
+            "details": [
+              {
+                "_object": "/air/port",
+                "port_code": "2720",
+                "iata_code": "LAX",
+                "icao_code": "KLAX"
+              },
+              {
+                "_object": "/trucking/port",
+                "port_code": "2720"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "destination_address"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Xavier LLC",
+            "address": {
+              "_object": "/address",
+              "street_address": "123 Main St, Los Angeles",
+              "street_address2": null,
+              "city": "Los Angeles",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "90007",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": "id-112580"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "cartage",
+          "pieces": null,
+          "container_legs": null
+        },
+        "rail_leg": null
+      }
+    ]
+  },
+  "error": null
+}

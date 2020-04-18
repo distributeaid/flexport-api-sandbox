@@ -1,0 +1,264 @@
+{
+  "_object": "/api/response",
+  "self": "https://api.flexport.com/bookings/163271",
+  "version": 2,
+  "data": {
+    "metadata": {},
+    "_object": "/booking",
+    "id": 163271,
+    "name": "fsfsdfds",
+    "flex_id": "FLEX-659879",
+    "shipment": {
+      "_object": "/api/refs/object",
+      "ref_type": "/shipment",
+      "link": "https://api.flexport.com/shipments/659879",
+      "id": 659879
+    },
+    "status": "booked",
+    "shipper_entity": {
+      "_object": "/company_entity",
+      "id": 566428,
+      "name": "Flexport Demo Shipper",
+      "mailing_address": {
+        "_object": "/address",
+        "street_address": "1 Queen St",
+        "street_address2": null,
+        "city": "Causeway Bay",
+        "state": "Hong Kong",
+        "country": "Hong Kong",
+        "country_code": "HK",
+        "zip": null,
+        "unlocode": null,
+        "timezone": "Asia/Hong_Kong",
+        "ref": null
+      },
+      "ref": "id-566428",
+      "vat_numbers": []
+    },
+    "consignee_entity": {
+      "_object": "/company_entity",
+      "id": 638832,
+      "name": "Hiding Supplier Co. (HK)",
+      "mailing_address": {
+        "_object": "/address",
+        "street_address": "123 Testing Street, Shatin",
+        "street_address2": "",
+        "city": "Hong Kong",
+        "state": "",
+        "country": "Hong Kong",
+        "country_code": "HK",
+        "zip": "",
+        "unlocode": null,
+        "timezone": "Asia/Hong_Kong",
+        "ref": null
+      },
+      "ref": "id-638832",
+      "vat_numbers": []
+    },
+    "notify_party": null,
+    "transportation_mode": "ocean",
+    "ocean_booking": {
+      "_object": "/ocean/booking",
+      "is_lcl": false,
+      "container_counts": {
+        "_object": "/container_counts",
+        "twenty_ft": null,
+        "forty_ft": 1,
+        "forty_ft_hc": null,
+        "forty_five_ft_hc": null
+      },
+      "incoterm": "FOB",
+      "wants_pickup_service": false,
+      "wants_delivery_service": true,
+      "origin_port": {
+        "_object": "/place",
+        "name": "Yantian, China",
+        "address": {
+          "_object": "/address",
+          "street_address": null,
+          "street_address2": null,
+          "city": "Yantian",
+          "state": null,
+          "country": "China",
+          "country_code": "CN",
+          "zip": null,
+          "unlocode": "CNYTN",
+          "timezone": "Asia/Hong_Kong",
+          "ref": "id-38385"
+        },
+        "details": [
+          {
+            "_object": "/trucking/port",
+            "port_code": "57078"
+          },
+          {
+            "_object": "/ocean/port",
+            "port_code": "57078"
+          }
+        ]
+      },
+      "destination_port": {
+        "_object": "/place",
+        "name": "Los Angeles, CA",
+        "address": {
+          "_object": "/address",
+          "street_address": null,
+          "street_address2": null,
+          "city": "Los Angeles",
+          "state": "CA",
+          "country": "United States",
+          "country_code": "US",
+          "zip": null,
+          "unlocode": "USLAX",
+          "timezone": "America/Los_Angeles",
+          "ref": "id-41538"
+        },
+        "details": [
+          {
+            "_object": "/ocean/railport",
+            "port_code": "2704"
+          },
+          {
+            "_object": "/trucking/port",
+            "port_code": "2704"
+          },
+          {
+            "_object": "/ocean/port",
+            "port_code": "2704"
+          }
+        ]
+      },
+      "product_descriptions": [
+        {
+          "_object": "/bookings/product_description",
+          "description": "fdsfsdjfldksfjksdlfjksdljfkldsjflksdf fdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdf",
+          "description_for_export_customs": "i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  ",
+          "description_for_export_customs_locale": "zh_CN",
+          "hs_code": {
+            "_object": "/hs_code",
+            "description": "Live bovine animals:: Purebred breeding animals",
+            "code": "0102.21",
+            "country_code": "US"
+          }
+        },
+        {
+          "_object": "/bookings/product_description",
+          "description": "fdsfsdjfldksfjksdlfjksdljfkldsjflksdf fdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdf",
+          "description_for_export_customs": "i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  ",
+          "description_for_export_customs_locale": "zh_CN",
+          "hs_code": {
+            "_object": "/hs_code",
+            "description": "Live horses, asses, mules and hinnies:: Other",
+            "code": "0101.29",
+            "country_code": "US"
+          }
+        },
+        {
+          "_object": "/bookings/product_description",
+          "description": "fdsfsdjfldksfjksdlfjksdljfkldsjflksdf fdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdffdsfsdjfldksfjksdlfjksdljfkldsjflksdf",
+          "description_for_export_customs": "i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  i 好离开房间时疯狂的是老骥伏枥圣诞节发多少  ",
+          "description_for_export_customs_locale": "zh_CN",
+          "hs_code": {
+            "_object": "/hs_code",
+            "description": "Live horses, asses, mules and hinnies:: Purebred breeding animals",
+            "code": "0101.21",
+            "country_code": "US"
+          }
+        }
+      ]
+    },
+    "air_booking": null,
+    "trucking_booking": null,
+    "origin_address": {
+      "_object": "/address",
+      "street_address": "1155 Worldwide Blvd.",
+      "street_address2": null,
+      "city": "Hebron",
+      "state": "KY",
+      "country": "United States",
+      "country_code": "US",
+      "zip": "41048",
+      "unlocode": null,
+      "timezone": "America/New_York",
+      "ref": "id-22003"
+    },
+    "cargo_ready_date": "2019-11-27",
+    "destination_address": {
+      "_object": "/address",
+      "street_address": "1850 Mercer Drive",
+      "street_address2": null,
+      "city": "Lexington",
+      "state": "KY",
+      "country": "United States",
+      "country_code": "US",
+      "zip": "40511",
+      "unlocode": null,
+      "timezone": "America/New_York",
+      "ref": "id-22005"
+    },
+    "delivery_date": null,
+    "wants_export_customs_service": false,
+    "cargo": {
+      "_object": "/cargo",
+      "volume": {
+        "value": 10,
+        "unit": "cbm",
+        "_object": "/quantity/volume"
+      },
+      "weight": {
+        "value": 100,
+        "unit": "kg",
+        "_object": "/quantity/weight"
+      },
+      "marks_and_numbers": null,
+      "shipping_units": [
+        {
+          "_object": "/shipping_unit",
+          "name": null,
+          "volume": {
+            "value": 0,
+            "unit": "cbm",
+            "_object": "/quantity/volume"
+          },
+          "weight": {
+            "value": 0,
+            "unit": "kg",
+            "_object": "/quantity/weight"
+          },
+          "height": {
+            "value": 0,
+            "unit": "cm",
+            "_object": "/quantity/length"
+          },
+          "length": {
+            "value": 0,
+            "unit": "cm",
+            "_object": "/quantity/length"
+          },
+          "width": {
+            "value": 0,
+            "unit": "cm",
+            "_object": "/quantity/length"
+          },
+          "count": 10,
+          "atomic_count": 10,
+          "unit_type": "pallet"
+        }
+      ],
+      "contains_hazmat": false,
+      "contains_magnets": false,
+      "contains_other_dangerous_goods": false,
+      "contains_li_ion": false,
+      "contains_non_li_ion_battery": false,
+      "lithium_batteries_packing_types": []
+    },
+    "special_instructions": null,
+    "booking_line_items": {
+      "_object": "/api/refs/collection",
+      "ref_type": "/purchase_orders/booking_line_item",
+      "link": "https://api.flexport.com/booking_line_items?f.booking.id=163271"
+    },
+    "created_at": "2019-11-05T08:15:28.037Z"
+  },
+  "error": null
+}

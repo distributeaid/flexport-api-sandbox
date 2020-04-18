@@ -1,0 +1,40 @@
+{
+  "_object": "/api/response",
+  "self": "https://api.flexport.com/ocean/shipment_containers/294703",
+  "version": 2,
+  "data": {
+    "metadata": {},
+    "_object": "/ocean/shipment_container",
+    "id": 294703,
+    "container_type": "dry",
+    "container_number": "APZU4564517",
+    "container_size": "fourty_ft",
+    "seal_number": "seal124",
+    "estimated_departure_date": "2019-11-01T12:00:00.000+08:00",
+    "actual_departure_date": "2019-11-01T15:42:44.000+08:00",
+    "estimated_arrival_date": "2019-11-16T00:00:00.000-08:00",
+    "actual_arrival_date": "2019-11-16T14:18:00.000-08:00",
+    "estimated_pickup_date": "2019-10-28T12:00:00.000+08:00",
+    "actual_pickup_date": "2019-10-28T12:00:00.000+08:00",
+    "estimated_delivery_date": "2019-12-14T12:00:00.000-08:00",
+    "actual_delivery_date": "2019-12-26T00:30:00.000-08:00",
+    "last_free_day_date": null,
+    "empty_returned_date": "2019-12-04",
+    "cargo_ready_date": "2019-10-26",
+    "available_for_pickup_date": null,
+    "estimated_available_for_pickup_date": null,
+    "shipment": {
+      "_object": "/api/refs/object",
+      "ref_type": "/shipment",
+      "link": "https://api.flexport.com/shipments/650363",
+      "id": 650363
+    },
+    "container_legs": {
+      "_object": "/api/refs/collection",
+      "ref_type": "/ocean/shipment_container_leg",
+      "link": "https://api.flexport.com/ocean/shipment_container_legs?f.shipment_container.id=294703"
+    },
+    "items": []
+  },
+  "error": null
+}

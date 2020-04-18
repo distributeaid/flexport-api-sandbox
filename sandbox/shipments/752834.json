@@ -1,0 +1,156 @@
+{
+  "_object": "/api/response",
+  "self": "https://api.flexport.com/shipments/752834",
+  "version": 2,
+  "data": {
+    "metadata": {},
+    "_object": "/shipment",
+    "id": 752834,
+    "name": "Test lw2",
+    "booking": {
+      "_object": "/api/refs/object",
+      "ref_type": "/booking",
+      "link": "https://api.flexport.com/bookings/220095",
+      "id": 220095
+    },
+    "transportation_mode": "air",
+    "freight_type": "port_to_port",
+    "incoterm": "FOB",
+    "calculated_weight": {
+      "value": 500,
+      "unit": "kg",
+      "_object": "/quantity/weight"
+    },
+    "calculated_volume": {
+      "value": 2.7,
+      "unit": "cbm",
+      "_object": "/quantity/volume"
+    },
+    "pieces": 100,
+    "it_number": null,
+    "created_date": "2020-03-24T02:20:38.236Z",
+    "status": "in_transit_to_departure_port",
+    "priority": "standard",
+    "updated_at": "2020-03-25T08:20:59.308Z",
+    "archived_at": null,
+    "estimated_departure_date": null,
+    "actual_departure_date": null,
+    "estimated_arrival_date": null,
+    "actual_arrival_date": null,
+    "estimated_picked_up_in_full_date": null,
+    "actual_picked_up_in_full_date": "2020-03-21T12:00:00.000+08:00",
+    "estimated_delivered_in_full_date": null,
+    "actual_delivered_in_full_date": null,
+    "cargo_ready_date": "2020-03-31",
+    "air_shipment": {
+      "_object": "/air/shipment",
+      "house_airway_bill": "67890",
+      "master_airway_bill": "123-45",
+      "chargeable_weight": {
+        "value": 500,
+        "unit": "kg",
+        "_object": "/quantity/weight"
+      },
+      "chargeable_volume": {
+        "value": 2.7,
+        "unit": "cbm",
+        "_object": "/quantity/volume"
+      }
+    },
+    "ocean_shipment": null,
+    "shippers": [
+      {
+        "_object": "/company_entity",
+        "id": 629335,
+        "name": "Flexport Demo Trading Company",
+        "mailing_address": {
+          "_object": "/address",
+          "street_address": "852 Damalu Street, XYZ Industrial Park",
+          "street_address2": null,
+          "city": "Dongguan",
+          "state": "Guangdong",
+          "country": "China",
+          "country_code": "CN",
+          "zip": null,
+          "unlocode": null,
+          "timezone": "Asia/Chongqing",
+          "ref": null
+        },
+        "ref": "id-629335",
+        "vat_numbers": []
+      }
+    ],
+    "consignees": [
+      {
+        "_object": "/company_entity",
+        "id": 556359,
+        "name": "Bookings Test Consignee",
+        "mailing_address": {
+          "_object": "/address",
+          "street_address": "760 MARKET ST FL 8",
+          "street_address2": "",
+          "city": "San Francisco",
+          "state": "CA",
+          "country": "United States",
+          "country_code": "US",
+          "zip": "94102-2300",
+          "unlocode": null,
+          "timezone": "America/Los_Angeles",
+          "ref": "id-324515"
+        },
+        "ref": "id-556359",
+        "vat_numbers": []
+      }
+    ],
+    "buyers": [],
+    "sellers": [],
+    "importers_of_record": [
+      {
+        "_object": "/company_entity",
+        "id": 556359,
+        "name": "Bookings Test Consignee",
+        "mailing_address": {
+          "_object": "/address",
+          "street_address": "760 MARKET ST FL 8",
+          "street_address2": "",
+          "city": "San Francisco",
+          "state": "CA",
+          "country": "United States",
+          "country_code": "US",
+          "zip": "94102-2300",
+          "unlocode": null,
+          "timezone": "America/Los_Angeles",
+          "ref": "id-324515"
+        },
+        "ref": "id-556359",
+        "vat_numbers": []
+      }
+    ],
+    "items": [],
+    "legs": {
+      "_object": "/api/refs/collection",
+      "ref_type": "/shipment_leg",
+      "link": "https://api.flexport.com/shipment_legs?f.shipment.id=752834"
+    },
+    "customs_entries": {
+      "_object": "/api/refs/collection",
+      "ref_type": "/customs_entry",
+      "link": "https://api.flexport.com/customs_entries?f.shipment.id=752834"
+    },
+    "commercial_invoices": {
+      "_object": "/api/refs/collection",
+      "ref_type": "/commercial_invoice",
+      "link": "https://api.flexport.com/commercial_invoices?f.shipment.id=752834"
+    },
+    "documents": {
+      "_object": "/api/refs/collection",
+      "ref_type": "/document",
+      "link": "https://api.flexport.com/documents?f.shipment.id=752834"
+    },
+    "departure_date": null,
+    "arrival_date": null,
+    "picked_up_in_full_date": "2020-03-21T12:00:00.000+08:00",
+    "delivered_in_full_date": null
+  },
+  "error": null
+}

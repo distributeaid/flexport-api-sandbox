@@ -1,0 +1,311 @@
+{
+  "_object": "/api/response",
+  "self": "https://api.flexport.com/shipment_legs?f.shipment.id=646584",
+  "version": 2,
+  "data": {
+    "_object": "/api/collections/paginated",
+    "prev": null,
+    "next": null,
+    "total_count": 3,
+    "data": [
+      {
+        "_object": "/shipment_leg",
+        "id": 5715239,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/646584",
+          "id": 646584
+        },
+        "estimated_arrival_date": "2019-10-21T12:00:00.000+08:00",
+        "actual_arrival_date": null,
+        "estimated_departure_date": "2019-10-21T12:00:00.000+08:00",
+        "actual_departure_date": null,
+        "cargo_ready_date": "2019-10-19",
+        "additional_dates": {
+          "cargo_ready_date": "2019-10-19"
+        },
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "origin_address"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Mirko's Yantian Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "123 Pick-up Street",
+              "street_address2": null,
+              "city": "Shenzhen ",
+              "state": "Guangdong",
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Shanghai",
+              "ref": "id-202484"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_loading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Yantian, China",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Yantian",
+              "state": null,
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": "CNYTN",
+              "timezone": "Asia/Hong_Kong",
+              "ref": "id-38385"
+            },
+            "details": [
+              {
+                "_object": "/trucking/port",
+                "port_code": "57078"
+              },
+              {
+                "_object": "/ocean/port",
+                "port_code": "57078"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "drayage",
+          "pieces": null,
+          "container_legs": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container_leg",
+            "link": "https://api.flexport.com/ocean/shipment_container_legs?f.leg.id=5715239"
+          }
+        },
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 5715240,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/646584",
+          "id": 646584
+        },
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "cargo_ready_date": null,
+        "additional_dates": {},
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_unloading",
+            "customs_entry",
+            "fmc_port_of_unloading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Los Angeles, CA",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Los Angeles",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": null,
+              "unlocode": "USLAX",
+              "timezone": "America/Los_Angeles",
+              "ref": "id-41538"
+            },
+            "details": [
+              {
+                "_object": "/ocean/railport",
+                "port_code": "2704"
+              },
+              {
+                "_object": "/trucking/port",
+                "port_code": "2704"
+              },
+              {
+                "_object": "/ocean/port",
+                "port_code": "2704"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "destination_address"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "AC Ram Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "123 Test St",
+              "street_address2": null,
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94105",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": "id-63331"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": "JC Transport",
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "drayage",
+          "pieces": null,
+          "container_legs": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container_leg",
+            "link": "https://api.flexport.com/ocean/shipment_container_legs?f.leg.id=5715240"
+          }
+        },
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 5863435,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/646584",
+          "id": 646584
+        },
+        "estimated_arrival_date": "2019-11-07T14:00:00.000-08:00",
+        "actual_arrival_date": null,
+        "estimated_departure_date": "2019-10-25T09:00:00.000+08:00",
+        "actual_departure_date": null,
+        "cargo_ready_date": null,
+        "additional_dates": {},
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_loading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Yantian, China",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Yantian",
+              "state": null,
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": "CNYTN",
+              "timezone": "Asia/Hong_Kong",
+              "ref": "id-38385"
+            },
+            "details": [
+              {
+                "_object": "/trucking/port",
+                "port_code": "57078"
+              },
+              {
+                "_object": "/ocean/port",
+                "port_code": "57078"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_unloading",
+            "customs_entry",
+            "fmc_port_of_unloading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Los Angeles, CA",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Los Angeles",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": null,
+              "unlocode": "USLAX",
+              "timezone": "America/Los_Angeles",
+              "ref": "id-41538"
+            },
+            "details": [
+              {
+                "_object": "/ocean/railport",
+                "port_code": "2704"
+              },
+              {
+                "_object": "/trucking/port",
+                "port_code": "2704"
+              },
+              {
+                "_object": "/ocean/port",
+                "port_code": "2704"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "transportation_mode": "ocean",
+        "carrier_name": "ONE- Ocean Network Express",
+        "ocean_leg": {
+          "_object": "/ocean/shipment_leg",
+          "scac_code": "ONEY",
+          "vessel_name": "ARISTOMENIS",
+          "vessel_imo": "9408841",
+          "voyage_number": "009E",
+          "container_legs": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container_leg",
+            "link": "https://api.flexport.com/ocean/shipment_container_legs?f.leg.id=5863435"
+          }
+        },
+        "air_leg": null,
+        "trucking_leg": null,
+        "rail_leg": null
+      }
+    ]
+  },
+  "error": null
+}

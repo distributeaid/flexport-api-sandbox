@@ -1,0 +1,857 @@
+{
+  "_object": "/api/response",
+  "self": "https://flexport-sandbox.example.com/shipments?page=13&per=10",
+  "version": 2,
+  "data": {
+    "_object": "/api/collections/paginated",
+    "prev": "https://flexport-sandbox.example.com/shipments?page=12&per=10",
+    "next": null,
+    "total_count": 126,
+    "data": [
+      {
+        "metadata": {},
+        "_object": "/shipment",
+        "id": 738018,
+        "name": "Quote Collaboration Test",
+        "booking": {
+          "_object": "/api/refs/object",
+          "ref_type": "/booking",
+          "link": "https://api.flexport.com/bookings/210695",
+          "id": 210695
+        },
+        "transportation_mode": "ocean",
+        "freight_type": "port_to_door",
+        "incoterm": "FOB",
+        "calculated_weight": {
+          "value": 10000,
+          "unit": "kg",
+          "_object": "/quantity/weight"
+        },
+        "calculated_volume": {
+          "value": 50,
+          "unit": "cbm",
+          "_object": "/quantity/volume"
+        },
+        "pieces": 0,
+        "it_number": null,
+        "created_date": "2020-03-04T12:09:57.830Z",
+        "status": "seller_location",
+        "priority": "standard",
+        "updated_at": "2020-03-04T12:34:05.817Z",
+        "archived_at": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_picked_up_in_full_date": null,
+        "actual_picked_up_in_full_date": null,
+        "estimated_delivered_in_full_date": null,
+        "actual_delivered_in_full_date": null,
+        "cargo_ready_date": "2020-03-06",
+        "air_shipment": null,
+        "ocean_shipment": {
+          "_object": "/ocean/shipment",
+          "is_lcl": false,
+          "house_bill_number": "",
+          "master_bill_number": null,
+          "carrier_booking_number": null,
+          "containers": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container",
+            "link": "https://api.flexport.com/ocean/shipment_containers?f.shipment.id=738018"
+          }
+        },
+        "shippers": [
+          {
+            "_object": "/company_entity",
+            "id": 566428,
+            "name": "Flexport Demo Shipper",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "1 Queen St",
+              "street_address2": null,
+              "city": "Causeway Bay",
+              "state": "Hong Kong",
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Hong_Kong",
+              "ref": null
+            },
+            "ref": "id-566428",
+            "vat_numbers": []
+          }
+        ],
+        "consignees": [
+          {
+            "_object": "/company_entity",
+            "id": 556359,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-556359",
+            "vat_numbers": []
+          }
+        ],
+        "buyers": [],
+        "sellers": [],
+        "importers_of_record": [
+          {
+            "_object": "/company_entity",
+            "id": 556359,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-556359",
+            "vat_numbers": []
+          }
+        ],
+        "items": [],
+        "legs": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/shipment_leg",
+          "link": "https://api.flexport.com/shipment_legs?f.shipment.id=738018"
+        },
+        "customs_entries": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/customs_entry",
+          "link": "https://api.flexport.com/customs_entries?f.shipment.id=738018"
+        },
+        "commercial_invoices": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/commercial_invoice",
+          "link": "https://api.flexport.com/commercial_invoices?f.shipment.id=738018"
+        },
+        "documents": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/document",
+          "link": "https://api.flexport.com/documents?f.shipment.id=738018"
+        },
+        "departure_date": null,
+        "arrival_date": null,
+        "picked_up_in_full_date": null,
+        "delivered_in_full_date": null
+      },
+      {
+        "metadata": {},
+        "_object": "/shipment",
+        "id": 740104,
+        "name": "test network issue",
+        "booking": {
+          "_object": "/api/refs/object",
+          "ref_type": "/booking",
+          "link": "https://api.flexport.com/bookings/211972",
+          "id": 211972
+        },
+        "transportation_mode": "ocean",
+        "freight_type": "port_to_door",
+        "incoterm": "FOB",
+        "calculated_weight": {
+          "value": 10000,
+          "unit": "kg",
+          "_object": "/quantity/weight"
+        },
+        "calculated_volume": {
+          "value": 40,
+          "unit": "cbm",
+          "_object": "/quantity/volume"
+        },
+        "pieces": 500,
+        "it_number": null,
+        "created_date": "2020-03-06T11:05:17.981Z",
+        "status": "seller_location",
+        "priority": "standard",
+        "updated_at": "2020-03-06T11:07:33.301Z",
+        "archived_at": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_picked_up_in_full_date": null,
+        "actual_picked_up_in_full_date": null,
+        "estimated_delivered_in_full_date": null,
+        "actual_delivered_in_full_date": null,
+        "cargo_ready_date": "2020-03-21",
+        "air_shipment": null,
+        "ocean_shipment": {
+          "_object": "/ocean/shipment",
+          "is_lcl": false,
+          "house_bill_number": "",
+          "master_bill_number": null,
+          "carrier_booking_number": null,
+          "containers": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container",
+            "link": "https://api.flexport.com/ocean/shipment_containers?f.shipment.id=740104"
+          }
+        },
+        "shippers": [
+          {
+            "_object": "/company_entity",
+            "id": 566428,
+            "name": "Flexport Demo Shipper",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "1 Queen St",
+              "street_address2": null,
+              "city": "Causeway Bay",
+              "state": "Hong Kong",
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Hong_Kong",
+              "ref": null
+            },
+            "ref": "id-566428",
+            "vat_numbers": []
+          }
+        ],
+        "consignees": [
+          {
+            "_object": "/company_entity",
+            "id": 556359,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-556359",
+            "vat_numbers": []
+          }
+        ],
+        "buyers": [],
+        "sellers": [],
+        "importers_of_record": [
+          {
+            "_object": "/company_entity",
+            "id": 556359,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-556359",
+            "vat_numbers": []
+          }
+        ],
+        "items": [],
+        "legs": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/shipment_leg",
+          "link": "https://api.flexport.com/shipment_legs?f.shipment.id=740104"
+        },
+        "customs_entries": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/customs_entry",
+          "link": "https://api.flexport.com/customs_entries?f.shipment.id=740104"
+        },
+        "commercial_invoices": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/commercial_invoice",
+          "link": "https://api.flexport.com/commercial_invoices?f.shipment.id=740104"
+        },
+        "documents": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/document",
+          "link": "https://api.flexport.com/documents?f.shipment.id=740104"
+        },
+        "departure_date": null,
+        "arrival_date": null,
+        "picked_up_in_full_date": null,
+        "delivered_in_full_date": null
+      },
+      {
+        "metadata": {},
+        "_object": "/shipment",
+        "id": 742030,
+        "name": "Test LCL Shipment Flow with Queues and Collaboration  ",
+        "booking": {
+          "_object": "/api/refs/object",
+          "ref_type": "/booking",
+          "link": "https://api.flexport.com/bookings/213206",
+          "id": 213206
+        },
+        "transportation_mode": "ocean",
+        "freight_type": "port_to_door",
+        "incoterm": "FOB",
+        "calculated_weight": {
+          "value": 581.4,
+          "unit": "kg",
+          "_object": "/quantity/weight"
+        },
+        "calculated_volume": {
+          "value": 26.851,
+          "unit": "cbm",
+          "_object": "/quantity/volume"
+        },
+        "pieces": 153,
+        "it_number": null,
+        "created_date": "2020-03-10T04:24:32.397Z",
+        "status": "seller_location",
+        "priority": "high",
+        "updated_at": "2020-03-25T21:25:46.613Z",
+        "archived_at": null,
+        "estimated_departure_date": "2020-03-20T12:00:00.000+08:00",
+        "actual_departure_date": "2020-03-21T08:57:24.000+08:00",
+        "estimated_arrival_date": "2020-04-05T18:00:00.000-07:00",
+        "actual_arrival_date": null,
+        "estimated_picked_up_in_full_date": "2020-03-11T12:00:00.000+08:00",
+        "actual_picked_up_in_full_date": null,
+        "estimated_delivered_in_full_date": null,
+        "actual_delivered_in_full_date": null,
+        "cargo_ready_date": "2020-03-09",
+        "air_shipment": null,
+        "ocean_shipment": {
+          "_object": "/ocean/shipment",
+          "is_lcl": true,
+          "house_bill_number": "",
+          "master_bill_number": null,
+          "carrier_booking_number": null,
+          "containers": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container",
+            "link": "https://api.flexport.com/ocean/shipment_containers?f.shipment.id=742030"
+          }
+        },
+        "shippers": [
+          {
+            "_object": "/company_entity",
+            "id": 566428,
+            "name": "Flexport Demo Shipper",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "1 Queen St",
+              "street_address2": null,
+              "city": "Causeway Bay",
+              "state": "Hong Kong",
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Hong_Kong",
+              "ref": null
+            },
+            "ref": "id-566428",
+            "vat_numbers": []
+          }
+        ],
+        "consignees": [
+          {
+            "_object": "/company_entity",
+            "id": 679468,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "SAN FRANCISCO",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-679468",
+            "vat_numbers": []
+          }
+        ],
+        "buyers": [],
+        "sellers": [],
+        "importers_of_record": [],
+        "items": [],
+        "legs": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/shipment_leg",
+          "link": "https://api.flexport.com/shipment_legs?f.shipment.id=742030"
+        },
+        "customs_entries": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/customs_entry",
+          "link": "https://api.flexport.com/customs_entries?f.shipment.id=742030"
+        },
+        "commercial_invoices": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/commercial_invoice",
+          "link": "https://api.flexport.com/commercial_invoices?f.shipment.id=742030"
+        },
+        "documents": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/document",
+          "link": "https://api.flexport.com/documents?f.shipment.id=742030"
+        },
+        "departure_date": "2020-03-21T08:57:24.000+08:00",
+        "arrival_date": "2020-04-05T18:00:00.000-07:00",
+        "picked_up_in_full_date": "2020-03-11T12:00:00.000+08:00",
+        "delivered_in_full_date": null
+      },
+      {
+        "metadata": {},
+        "_object": "/shipment",
+        "id": 742047,
+        "name": "Testing LCL (shipco style) ",
+        "booking": {
+          "_object": "/api/refs/object",
+          "ref_type": "/booking",
+          "link": "https://api.flexport.com/bookings/213213",
+          "id": 213213
+        },
+        "transportation_mode": "ocean",
+        "freight_type": "port_to_door",
+        "incoterm": "FOB",
+        "calculated_weight": {
+          "value": 998.7,
+          "unit": "kg",
+          "_object": "/quantity/weight"
+        },
+        "calculated_volume": {
+          "value": 17.059,
+          "unit": "cbm",
+          "_object": "/quantity/volume"
+        },
+        "pieces": 417,
+        "it_number": null,
+        "created_date": "2020-03-10T04:53:01.173Z",
+        "status": "seller_location",
+        "priority": "standard",
+        "updated_at": "2020-03-23T06:50:50.608Z",
+        "archived_at": null,
+        "estimated_departure_date": "2020-03-11T12:00:00.000+08:00",
+        "actual_departure_date": null,
+        "estimated_arrival_date": "2020-03-25T12:00:00.000-07:00",
+        "actual_arrival_date": null,
+        "estimated_picked_up_in_full_date": "2020-03-06T12:00:00.000+08:00",
+        "actual_picked_up_in_full_date": null,
+        "estimated_delivered_in_full_date": null,
+        "actual_delivered_in_full_date": null,
+        "cargo_ready_date": "2020-03-06",
+        "air_shipment": null,
+        "ocean_shipment": {
+          "_object": "/ocean/shipment",
+          "is_lcl": true,
+          "house_bill_number": "TEST11111111",
+          "master_bill_number": "TEST1111111",
+          "carrier_booking_number": null,
+          "containers": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container",
+            "link": "https://api.flexport.com/ocean/shipment_containers?f.shipment.id=742047"
+          }
+        },
+        "shippers": [
+          {
+            "_object": "/company_entity",
+            "id": 566428,
+            "name": "Flexport Demo Shipper",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "1 Queen St",
+              "street_address2": null,
+              "city": "Causeway Bay",
+              "state": "Hong Kong",
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Hong_Kong",
+              "ref": null
+            },
+            "ref": "id-566428",
+            "vat_numbers": []
+          }
+        ],
+        "consignees": [
+          {
+            "_object": "/company_entity",
+            "id": 679468,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "SAN FRANCISCO",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-679468",
+            "vat_numbers": []
+          }
+        ],
+        "buyers": [],
+        "sellers": [],
+        "importers_of_record": [],
+        "items": [],
+        "legs": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/shipment_leg",
+          "link": "https://api.flexport.com/shipment_legs?f.shipment.id=742047"
+        },
+        "customs_entries": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/customs_entry",
+          "link": "https://api.flexport.com/customs_entries?f.shipment.id=742047"
+        },
+        "commercial_invoices": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/commercial_invoice",
+          "link": "https://api.flexport.com/commercial_invoices?f.shipment.id=742047"
+        },
+        "documents": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/document",
+          "link": "https://api.flexport.com/documents?f.shipment.id=742047"
+        },
+        "departure_date": "2020-03-11T12:00:00.000+08:00",
+        "arrival_date": "2020-03-25T12:00:00.000-07:00",
+        "picked_up_in_full_date": "2020-03-06T12:00:00.000+08:00",
+        "delivered_in_full_date": null
+      },
+      {
+        "metadata": {},
+        "_object": "/shipment",
+        "id": 747755,
+        "name": "333 yao test quote collaboration",
+        "booking": {
+          "_object": "/api/refs/object",
+          "ref_type": "/booking",
+          "link": "https://api.flexport.com/bookings/216829",
+          "id": 216829
+        },
+        "transportation_mode": "ocean",
+        "freight_type": "port_to_door",
+        "incoterm": "FOB",
+        "calculated_weight": {
+          "value": 10000,
+          "unit": "kg",
+          "_object": "/quantity/weight"
+        },
+        "calculated_volume": {
+          "value": 30,
+          "unit": "cbm",
+          "_object": "/quantity/volume"
+        },
+        "pieces": 100,
+        "it_number": null,
+        "created_date": "2020-03-18T07:24:51.294Z",
+        "status": "seller_location",
+        "priority": "standard",
+        "updated_at": "2020-03-18T08:57:06.424Z",
+        "archived_at": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_picked_up_in_full_date": null,
+        "actual_picked_up_in_full_date": null,
+        "estimated_delivered_in_full_date": null,
+        "actual_delivered_in_full_date": null,
+        "cargo_ready_date": "2020-03-19",
+        "air_shipment": null,
+        "ocean_shipment": {
+          "_object": "/ocean/shipment",
+          "is_lcl": false,
+          "house_bill_number": "FLXTFCNUS747755A",
+          "master_bill_number": null,
+          "carrier_booking_number": "BO10001",
+          "containers": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container",
+            "link": "https://api.flexport.com/ocean/shipment_containers?f.shipment.id=747755"
+          }
+        },
+        "shippers": [
+          {
+            "_object": "/company_entity",
+            "id": 566428,
+            "name": "Flexport Demo Shipper",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "1 Queen St",
+              "street_address2": null,
+              "city": "Causeway Bay",
+              "state": "Hong Kong",
+              "country": "Hong Kong",
+              "country_code": "HK",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Hong_Kong",
+              "ref": null
+            },
+            "ref": "id-566428",
+            "vat_numbers": []
+          }
+        ],
+        "consignees": [
+          {
+            "_object": "/company_entity",
+            "id": 556359,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-556359",
+            "vat_numbers": []
+          }
+        ],
+        "buyers": [],
+        "sellers": [],
+        "importers_of_record": [
+          {
+            "_object": "/company_entity",
+            "id": 556359,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-556359",
+            "vat_numbers": []
+          }
+        ],
+        "items": [],
+        "legs": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/shipment_leg",
+          "link": "https://api.flexport.com/shipment_legs?f.shipment.id=747755"
+        },
+        "customs_entries": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/customs_entry",
+          "link": "https://api.flexport.com/customs_entries?f.shipment.id=747755"
+        },
+        "commercial_invoices": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/commercial_invoice",
+          "link": "https://api.flexport.com/commercial_invoices?f.shipment.id=747755"
+        },
+        "documents": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/document",
+          "link": "https://api.flexport.com/documents?f.shipment.id=747755"
+        },
+        "departure_date": null,
+        "arrival_date": null,
+        "picked_up_in_full_date": null,
+        "delivered_in_full_date": null
+      },
+      {
+        "metadata": {},
+        "_object": "/shipment",
+        "id": 752834,
+        "name": "Test lw2",
+        "booking": {
+          "_object": "/api/refs/object",
+          "ref_type": "/booking",
+          "link": "https://api.flexport.com/bookings/220095",
+          "id": 220095
+        },
+        "transportation_mode": "air",
+        "freight_type": "port_to_port",
+        "incoterm": "FOB",
+        "calculated_weight": {
+          "value": 500,
+          "unit": "kg",
+          "_object": "/quantity/weight"
+        },
+        "calculated_volume": {
+          "value": 2.7,
+          "unit": "cbm",
+          "_object": "/quantity/volume"
+        },
+        "pieces": 100,
+        "it_number": null,
+        "created_date": "2020-03-24T02:20:38.236Z",
+        "status": "in_transit_to_departure_port",
+        "priority": "standard",
+        "updated_at": "2020-03-25T08:20:59.308Z",
+        "archived_at": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_picked_up_in_full_date": null,
+        "actual_picked_up_in_full_date": "2020-03-21T12:00:00.000+08:00",
+        "estimated_delivered_in_full_date": null,
+        "actual_delivered_in_full_date": null,
+        "cargo_ready_date": "2020-03-31",
+        "air_shipment": {
+          "_object": "/air/shipment",
+          "house_airway_bill": "67890",
+          "master_airway_bill": "123-45",
+          "chargeable_weight": {
+            "value": 500,
+            "unit": "kg",
+            "_object": "/quantity/weight"
+          },
+          "chargeable_volume": {
+            "value": 2.7,
+            "unit": "cbm",
+            "_object": "/quantity/volume"
+          }
+        },
+        "ocean_shipment": null,
+        "shippers": [
+          {
+            "_object": "/company_entity",
+            "id": 629335,
+            "name": "Flexport Demo Trading Company",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "852 Damalu Street, XYZ Industrial Park",
+              "street_address2": null,
+              "city": "Dongguan",
+              "state": "Guangdong",
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Chongqing",
+              "ref": null
+            },
+            "ref": "id-629335",
+            "vat_numbers": []
+          }
+        ],
+        "consignees": [
+          {
+            "_object": "/company_entity",
+            "id": 556359,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-556359",
+            "vat_numbers": []
+          }
+        ],
+        "buyers": [],
+        "sellers": [],
+        "importers_of_record": [
+          {
+            "_object": "/company_entity",
+            "id": 556359,
+            "name": "Bookings Test Consignee",
+            "mailing_address": {
+              "_object": "/address",
+              "street_address": "760 MARKET ST FL 8",
+              "street_address2": "",
+              "city": "San Francisco",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "94102-2300",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": null
+            },
+            "ref": "id-556359",
+            "vat_numbers": []
+          }
+        ],
+        "items": [],
+        "legs": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/shipment_leg",
+          "link": "https://api.flexport.com/shipment_legs?f.shipment.id=752834"
+        },
+        "customs_entries": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/customs_entry",
+          "link": "https://api.flexport.com/customs_entries?f.shipment.id=752834"
+        },
+        "commercial_invoices": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/commercial_invoice",
+          "link": "https://api.flexport.com/commercial_invoices?f.shipment.id=752834"
+        },
+        "documents": {
+          "_object": "/api/refs/collection",
+          "ref_type": "/document",
+          "link": "https://api.flexport.com/documents?f.shipment.id=752834"
+        },
+        "departure_date": null,
+        "arrival_date": null,
+        "picked_up_in_full_date": "2020-03-21T12:00:00.000+08:00",
+        "delivered_in_full_date": null
+      }
+    ]
+  },
+  "error": null
+}

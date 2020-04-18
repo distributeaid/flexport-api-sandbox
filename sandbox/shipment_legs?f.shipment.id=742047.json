@@ -1,0 +1,552 @@
+{
+  "_object": "/api/response",
+  "self": "https://api.flexport.com/shipment_legs?f.shipment.id=742047",
+  "version": 2,
+  "data": {
+    "_object": "/api/collections/paginated",
+    "prev": null,
+    "next": null,
+    "total_count": 6,
+    "data": [
+      {
+        "_object": "/shipment_leg",
+        "id": 6667174,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/742047",
+          "id": 742047
+        },
+        "estimated_arrival_date": "2020-03-25T12:00:00.000-07:00",
+        "actual_arrival_date": null,
+        "estimated_departure_date": "2020-03-11T12:00:00.000+08:00",
+        "actual_departure_date": "2020-03-11T12:00:00.000+08:00",
+        "cargo_ready_date": null,
+        "additional_dates": {},
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_loading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Yantian, China",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Yantian",
+              "state": null,
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": "CNYTN",
+              "timezone": "Asia/Hong_Kong",
+              "ref": "id-38385"
+            },
+            "details": [
+              {
+                "_object": "/trucking/port",
+                "port_code": "57078"
+              },
+              {
+                "_object": "/ocean/port",
+                "port_code": "57078"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_unloading",
+            "customs_entry",
+            "fmc_port_of_unloading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Los Angeles, CA",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Los Angeles",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": null,
+              "unlocode": "USLAX",
+              "timezone": "America/Los_Angeles",
+              "ref": "id-41538"
+            },
+            "details": [
+              {
+                "_object": "/ocean/railport",
+                "port_code": "2704"
+              },
+              {
+                "_object": "/trucking/port",
+                "port_code": "2704"
+              },
+              {
+                "_object": "/ocean/port",
+                "port_code": "2704"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "transportation_mode": "ocean",
+        "carrier_name": "FLXT TPEB Ocean Line",
+        "ocean_leg": {
+          "_object": "/ocean/shipment_leg",
+          "scac_code": "NONE",
+          "vessel_name": null,
+          "vessel_imo": null,
+          "voyage_number": null,
+          "container_legs": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container_leg",
+            "link": "https://api.flexport.com/ocean/shipment_container_legs?f.leg.id=6667174"
+          }
+        },
+        "air_leg": null,
+        "trucking_leg": null,
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 6667175,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/742047",
+          "id": 742047
+        },
+        "estimated_arrival_date": "2020-03-09T12:00:00.000+08:00",
+        "actual_arrival_date": "2020-03-09T12:00:00.000+08:00",
+        "estimated_departure_date": "2020-03-09T12:00:00.000+08:00",
+        "actual_departure_date": "2020-03-09T12:00:00.000+08:00",
+        "cargo_ready_date": null,
+        "additional_dates": {
+          "delivery_appointment_scheduled_for_date": "2020-03-09T12:00:00.000+08:00"
+        },
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "consolidation"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Flexport Shenzhen Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "GLP Logistics Park, Phase II, Block 9, Mingzhu 3rd Rd and Yong'an North 2nd St",
+              "street_address2": "深圳市盐田区永安路北一街盐田港普洛斯物流园二期9号仓库",
+              "city": "Shenzhen",
+              "state": "Guangdong",
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Shanghai",
+              "ref": "id-160816"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_loading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Yantian, China",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Yantian",
+              "state": null,
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": "CNYTN",
+              "timezone": "Asia/Hong_Kong",
+              "ref": "id-38385"
+            },
+            "details": [
+              {
+                "_object": "/trucking/port",
+                "port_code": "57078"
+              },
+              {
+                "_object": "/ocean/port",
+                "port_code": "57078"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "drayage",
+          "pieces": null,
+          "container_legs": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container_leg",
+            "link": "https://api.flexport.com/ocean/shipment_container_legs?f.leg.id=6667175"
+          }
+        },
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 6667176,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/742047",
+          "id": 742047
+        },
+        "estimated_arrival_date": "2020-03-26T12:00:00.000-07:00",
+        "actual_arrival_date": null,
+        "estimated_departure_date": "2020-03-26T12:00:00.000-07:00",
+        "actual_departure_date": null,
+        "cargo_ready_date": null,
+        "additional_dates": {
+          "delivery_appointment_scheduled_for_date": "2020-03-26T12:00:00.000-07:00"
+        },
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "port_of_unloading",
+            "customs_entry",
+            "fmc_port_of_unloading"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Los Angeles, CA",
+            "address": {
+              "_object": "/address",
+              "street_address": null,
+              "street_address2": null,
+              "city": "Los Angeles",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": null,
+              "unlocode": "USLAX",
+              "timezone": "America/Los_Angeles",
+              "ref": "id-41538"
+            },
+            "details": [
+              {
+                "_object": "/ocean/railport",
+                "port_code": "2704"
+              },
+              {
+                "_object": "/trucking/port",
+                "port_code": "2704"
+              },
+              {
+                "_object": "/ocean/port",
+                "port_code": "2704"
+              }
+            ]
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "deconsolidation"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Flexport Los Angeles Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "1420 N MCKINLEY AVE",
+              "street_address2": null,
+              "city": "LOS ANGELES",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "90059",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": "id-227012"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "drayage",
+          "pieces": null,
+          "container_legs": {
+            "_object": "/api/refs/collection",
+            "ref_type": "/ocean/shipment_container_leg",
+            "link": "https://api.flexport.com/ocean/shipment_container_legs?f.leg.id=6667176"
+          }
+        },
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 6667177,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/742047",
+          "id": 742047
+        },
+        "estimated_arrival_date": "2020-04-03T12:00:00.000-05:00",
+        "actual_arrival_date": null,
+        "estimated_departure_date": "2020-03-30T12:00:00.000-07:00",
+        "actual_departure_date": null,
+        "cargo_ready_date": null,
+        "additional_dates": {
+          "delivery_appointment_scheduled_for_date": "2020-04-03T12:00:00.000-05:00"
+        },
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "deconsolidation"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Flexport Los Angeles Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "1420 N MCKINLEY AVE",
+              "street_address2": null,
+              "city": "LOS ANGELES",
+              "state": "CA",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "90059",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": "id-227012"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "place_of_delivery"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Flexport Chicago Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "10601 FRANKLIN AVE",
+              "street_address2": null,
+              "city": "FRANKLIN PARK",
+              "state": "IL",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "60131",
+              "unlocode": null,
+              "timezone": "America/Chicago",
+              "ref": "id-225797"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "ltl",
+          "pieces": null,
+          "container_legs": null
+        },
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 6667178,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/742047",
+          "id": 742047
+        },
+        "estimated_arrival_date": "2020-03-06T12:00:00.000+08:00",
+        "actual_arrival_date": "2020-03-06T12:00:00.000+08:00",
+        "estimated_departure_date": "2020-03-06T12:00:00.000+08:00",
+        "actual_departure_date": "2020-03-06T12:00:00.000+08:00",
+        "cargo_ready_date": "2020-03-06",
+        "additional_dates": {
+          "cargo_ready_date": "2020-03-06",
+          "delivery_appointment_scheduled_for_date": "2020-03-06T12:00:00.000+08:00"
+        },
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "origin_address"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Mirko Yantian Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "3435 Shenzhen Rd.",
+              "street_address2": "",
+              "city": "Shenzhen",
+              "state": "Guangdong",
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Shanghai",
+              "ref": "id-162815"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "consolidation"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Flexport Shenzhen Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "GLP Logistics Park, Phase II, Block 9, Mingzhu 3rd Rd and Yong'an North 2nd St",
+              "street_address2": "深圳市盐田区永安路北一街盐田港普洛斯物流园二期9号仓库",
+              "city": "Shenzhen",
+              "state": "Guangdong",
+              "country": "China",
+              "country_code": "CN",
+              "zip": null,
+              "unlocode": null,
+              "timezone": "Asia/Shanghai",
+              "ref": "id-160816"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "ltl",
+          "pieces": null,
+          "container_legs": null
+        },
+        "rail_leg": null
+      },
+      {
+        "_object": "/shipment_leg",
+        "id": 6667179,
+        "shipment": {
+          "_object": "/api/refs/object",
+          "ref_type": "/shipment",
+          "link": "https://api.flexport.com/shipments/742047",
+          "id": 742047
+        },
+        "estimated_arrival_date": null,
+        "actual_arrival_date": null,
+        "estimated_departure_date": null,
+        "actual_departure_date": null,
+        "cargo_ready_date": null,
+        "additional_dates": {},
+        "origin": {
+          "_object": "/shipment_node",
+          "tags": [
+            "place_of_delivery"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Flexport Chicago Warehouse",
+            "address": {
+              "_object": "/address",
+              "street_address": "10601 FRANKLIN AVE",
+              "street_address2": null,
+              "city": "FRANKLIN PARK",
+              "state": "IL",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "60131",
+              "unlocode": null,
+              "timezone": "America/Chicago",
+              "ref": "id-225797"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "destination": {
+          "_object": "/shipment_node",
+          "tags": [
+            "destination_address"
+          ],
+          "place": {
+            "_object": "/place",
+            "name": "Nevada DC",
+            "address": {
+              "_object": "/address",
+              "street_address": "25 Industrial Way",
+              "street_address2": "Building 4",
+              "city": "Sparks",
+              "state": "Nevada",
+              "country": "United States",
+              "country_code": "US",
+              "zip": "89431",
+              "unlocode": null,
+              "timezone": "America/Los_Angeles",
+              "ref": "id-239359"
+            },
+            "details": []
+          },
+          "terminal": null
+        },
+        "transportation_mode": "truck",
+        "carrier_name": null,
+        "ocean_leg": null,
+        "air_leg": null,
+        "trucking_leg": {
+          "_object": "/trucking/shipment_leg",
+          "tracking_number": null,
+          "service_type": "ltl",
+          "pieces": null,
+          "container_legs": null
+        },
+        "rail_leg": null
+      }
+    ]
+  },
+  "error": null
+}

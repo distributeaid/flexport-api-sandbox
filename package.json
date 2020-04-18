@@ -1,0 +1,67 @@
+{
+  "name": "@distributeaid/flexport-api-sandbox",
+  "version": "0.0.0-development",
+  "description": "Provides a sandbox host of the Flexport API v2.",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/distributeaid/flexport-api-sandbox.git"
+  },
+  "keywords": [
+    "Distribute Aid",
+    "Flexport"
+  ],
+  "author": "Distribute Aid | https://distributeaid.org/",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/distributeaid/flexport-api-sandbox/issues"
+  },
+  "homepage": "https://github.com/distributeaid/flexport-api-sandbox#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --ext .js"
+    ],
+    "*.{md,json,yaml,yml,js}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@bifravst/code-style": "^7.1.1",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-angular": "^8.3.4",
+    "husky": "^4.2.3"
+  },
+  "dependencies": {
+    "fetch-ponyfill": "^6.1.0"
+  },
+  "release": {
+    "branches": [
+      "saga"
+    ],
+    "remoteTags": true,
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "sandbox",
+    "server.js",
+    "package-lock.json",
+    "LICENSE",
+    "README.md"
+  ]
+}
