@@ -56,7 +56,7 @@
   },
   "files": [
     "sandbox",
-    "server.js",
+    "dist",
     "package-lock.json",
     "LICENSE",
     "README.md"
