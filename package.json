@@ -35,24 +35,16 @@
     ]
   },
   "devDependencies": {
-    "@bifravst/code-style": "^7.1.1",
+    "@bifravst/code-style": "^7.1.4",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-angular": "^8.3.4",
-    "husky": "^4.2.3"
-  },
-  "dependencies": {
-    "fetch-ponyfill": "^6.1.0"
+    "husky": "^4.2.5"
   },
   "release": {
     "branches": [
       "saga"
     ],
-    "remoteTags": true,
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/github"
-    ]
+    "remoteTags": true
   },
   "publishConfig": {
     "access": "public"
