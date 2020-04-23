@@ -20,6 +20,7 @@ It can be used to run integration tests.
 ### Usage
 
     npm ci
+    npx tsc
     npm start # Starts the sandbox server at port 3000
 
 You can now query against `http://0.0.0.0:3000`, e.g.
@@ -29,4 +30,4 @@ You can now query against `http://0.0.0.0:3000`, e.g.
 
     export SANDBOX_API_ENDPOINT=<...>
     export SANDBOX_API_KEY=<...>
-    node sandbox-dumper.js
+    node dist/sandbox-dumper.js
