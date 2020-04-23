@@ -10,7 +10,8 @@ export const requestHandler = (hostname: string) => async (
 		const folders = request.url?.substr(1).split('/') ?? []
 		const fileName = folders.shift()
 		const f = path.join(
-			process.cwd(),
+			__dirname,
+			'..',
 			'sandbox',
 			...folders,
 			`${fileName}.json`,
