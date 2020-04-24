@@ -31,6 +31,8 @@ jobs:
         run: npm ci --no-audit
       - name: Compile
         run: npx tsc
+      - name: Test
+        run: npm test
       - name: Semantic release
         continue-on-error: true
         run: |

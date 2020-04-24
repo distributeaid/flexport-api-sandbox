@@ -40,10 +40,16 @@
     "@bifravst/code-style": "^7.1.4",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-angular": "^8.3.4",
+    "@types/jest": "^25.2.1",
     "@types/node": "^13.13.2",
-    "fetch-ponyfill": "^6.1.0",
+    "@types/node-fetch": "^2.5.7",
+    "@types/whatwg-fetch": "0.0.33",
     "husky": "^4.2.5",
-    "typescript": "^3.8.3"
+    "jest": "^25.4.0",
+    "node-fetch": "^2.6.0",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3",
+    "whatwg-fetch": "^3.0.0"
   },
   "release": {
     "branches": [
@@ -60,5 +66,28 @@
     "package-lock.json",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "jest": {
+    "testURL": "http://localhost",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": ".+\\.spec\\.ts$",
+    "coverageReporters": [
+      "html",
+      "lcov"
+    ],
+    "globals": {
+      "ts-jest": {
+        "diagnostics": true
+      }
+    }
+  },
+  "dependencies": {}
 }
