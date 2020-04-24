@@ -1,9 +1,8 @@
-import * as fetchPonyfill from 'fetch-ponyfill'
+import fetch from 'node-fetch'
 import { promises as fs } from 'fs'
 import * as path from 'path'
 import { parse } from 'url'
 
-const { fetch } = fetchPonyfill()
 const visited = new Map()
 
 const fetchAndStore = (url: string) => {
@@ -51,4 +50,7 @@ const follow = async (data: any) => {
 	}
 }
 
-fetchAndStore(`${process.env.SANDBOX_API_ENDPOINT}/shipments`)
+fetchAndStore(`${process.env.SANDBOX_API_ENDPOINT}/shipments`)?.catch((err) => {
+	console.error(err)
+	process.exit(1)
+})
