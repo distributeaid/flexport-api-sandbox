@@ -16,7 +16,7 @@ export const requestHandler = (hostname: string) => async (
 	}
 	try {
 		const folders = request.url?.substr(1).split('/') ?? []
-		const fileName = folders.shift()
+		const fileName = folders.pop()
 		const f = path.join(
 			__dirname,
 			'..',

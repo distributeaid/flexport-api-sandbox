@@ -23,6 +23,12 @@ describe('Flexport API Sandbox', () => {
 		const response = await res.json()
 		expect(response.data.data).toHaveLength(10)
 	})
+	it('returns a response for a subfolder', async () => {
+		const res = await fetch(`${hostname}/shipments/253590`)
+		expect(res.status).toEqual(200)
+		const response = await res.json()
+		expect(response.data.name).toEqual('LCL Test Shipment')
+	})
 	it('returns a 302 in case an URL is not found', async () => {
 		const res = await fetch(`${hostname}/foo`, { redirect: 'manual' })
 		expect(res.status).toEqual(302)
