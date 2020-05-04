@@ -4,7 +4,8 @@
   "description": "Provides a sandbox host of the Flexport API v2.",
   "scripts": {
     "start": "node dist/start.js",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "check-node-version --package"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -45,6 +46,7 @@
     "@types/node": "^13.13.4",
     "@types/node-fetch": "^2.5.7",
     "@types/whatwg-fetch": "0.0.33",
+    "check-node-version": "^4.0.3",
     "husky": "^4.2.5",
     "jest": "^25.5.1",
     "node-fetch": "^2.6.0",
@@ -90,5 +92,9 @@
       }
     }
   },
-  "dependencies": {}
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
 }
