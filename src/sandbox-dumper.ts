@@ -44,13 +44,17 @@ const discoverLinks = async (o: any) => {
 const follow = async (data: any) => {
 	if (data._object === '/api/collections/paginated') {
 		await Promise.all(data.data.map(discoverLinks))
-		if (data.next) {
+		if (data.next !== undefined) {
 			await fetchAndStore(data.next)
 		}
 	}
 }
 
-fetchAndStore(`${process.env.SANDBOX_API_ENDPOINT}/shipments`)?.catch((err) => {
-	console.error(err)
-	process.exit(1)
-})
+/** 
+	fetchAndStore(`${process.env.SANDBOX_API_ENDPOINT}/shipments`)?.catch(
+		(err) => {
+			console.error(err)
+			process.exit(1)
+		},
+	)
+*/
