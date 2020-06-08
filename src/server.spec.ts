@@ -4,18 +4,25 @@ import fetch from 'node-fetch'
 
 const port = 3000
 const hostname = `http://0.0.0.0:${port}`
+const apiKey = 'some-key'
+const headers = { Authorization: `Bearer ${apiKey}` }
 
 describe('Flexport API Sandbox', () => {
 	let server: http.Server
 	beforeAll(() => {
-		server = http.createServer(requestHandler(hostname))
+		server = http.createServer(
+			requestHandler({
+				hostname,
+				apiKey,
+			}),
+		)
 		server.listen(port)
 	})
 	afterAll(() => {
 		server.close()
 	})
 	it('returns a response when an URL is found', async () => {
-		const res = await fetch(`${hostname}/shipments`)
+		const res = await fetch(`${hostname}/shipments`, { headers })
 		expect(res.status).toEqual(200)
 		expect(res.headers.get('content-type')).toEqual(
 			'application/json; charset=utf-8',
@@ -24,20 +31,38 @@ describe('Flexport API Sandbox', () => {
 		expect(response.data.data).toHaveLength(10)
 	})
 	it('returns a response for a subfolder', async () => {
-		const res = await fetch(`${hostname}/shipments/253590`)
+		const res = await fetch(`${hostname}/shipments/253590`, { headers })
 		expect(res.status).toEqual(200)
 		const response = await res.json()
 		expect(response.data.name).toEqual('LCL Test Shipment')
 	})
 	it('returns a 302 in case an URL is not found', async () => {
-		const res = await fetch(`${hostname}/foo`, { redirect: 'manual' })
+		const res = await fetch(`${hostname}/foo`, { redirect: 'manual', headers })
 		expect(res.status).toEqual(302)
 		expect(res.headers.get('Content-Type')).toEqual(`text/html; charset=utf-8`)
 		expect(res.headers.get('location')).toEqual(`${hostname}/`)
 	})
 	it('returns a 404 for the start page', async () => {
-		const res = await fetch(`${hostname}/`)
+		const res = await fetch(`${hostname}/`, { headers })
 		expect(res.status).toEqual(404)
 		expect(res.headers.get('Content-Type')).toEqual(`application/json`)
+	})
+	it('returns a 401 if the API token does not match', async () => {
+		const res = await fetch(`${hostname}/`, {
+			headers: { Authorization: `Bearer foo` },
+		})
+		expect(res.status).toEqual(401)
+		expect(res.headers.get('Content-Type')).toEqual(
+			`application/json; charset=utf-8`,
+		)
+		const response = await res.json()
+		expect(response).toEqual({
+			errors: [
+				{
+					code: 'bad_token',
+					message: 'Bad Token',
+				},
+			],
+		})
 	})
 })

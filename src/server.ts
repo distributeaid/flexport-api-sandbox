@@ -1,12 +1,33 @@
 import * as http from 'http'
 import { responseForPath } from './responseForPath'
 
-export const requestHandler = (hostname: string) => {
+export const requestHandler = ({
+	hostname,
+	apiKey,
+}: {
+	hostname: string
+	apiKey: string
+}) => {
 	const p = handlePath(hostname)
 	return async (
 		request: http.IncomingMessage,
 		response: http.ServerResponse,
 	) => {
+		if (request.headers.authorization !== `Bearer ${apiKey}`) {
+			response.writeHead(401, {
+				'Content-Type': 'application/json; charset=utf-8',
+			})
+			response.end(
+				JSON.stringify({
+					errors: [
+						{
+							code: 'bad_token',
+							message: 'Bad Token',
+						},
+					],
+				}),
+			)
+		}
 		const res = await p(request.url)
 		response.writeHead(res.statusCode, res.headers)
 		response.end(res.body)
