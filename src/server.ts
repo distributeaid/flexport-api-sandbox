@@ -13,34 +13,41 @@ export const requestHandler = ({
 		request: http.IncomingMessage,
 		response: http.ServerResponse,
 	) => {
+		let res: Response
 		if (request.headers.authorization !== `Bearer ${apiKey}`) {
-			response.writeHead(401, {
-				'Content-Type': 'application/json; charset=utf-8',
-			})
-			response.end(
-				JSON.stringify({
-					errors: [
-						{
-							code: 'bad_token',
-							message: 'Bad Token',
-						},
-					],
-				}),
-			)
+			res = badTokenResponse()
+		} else {
+			res = await p(request.url)
 		}
-		const res = await p(request.url)
 		response.writeHead(res.statusCode, res.headers)
 		response.end(res.body)
 	}
 }
 
-export const handlePath = (hostname: string) => async (
-	resource?: string,
-): Promise<{
+export type Response = {
 	statusCode: number
 	headers: { [key: string]: any }
 	body: string
-}> => {
+}
+
+export const badTokenResponse = (): Response => ({
+	statusCode: 401,
+	headers: {
+		'Content-Type': 'application/json; charset=utf-8',
+	},
+	body: JSON.stringify({
+		errors: [
+			{
+				code: 'bad_token',
+				message: 'Bad Token',
+			},
+		],
+	}),
+})
+
+export const handlePath = (hostname: string) => async (
+	resource?: string,
+): Promise<Response> => {
 	if (resource === undefined || resource === '/') {
 		// Start page returns a 404
 		return {
