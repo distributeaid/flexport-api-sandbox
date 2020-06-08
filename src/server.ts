@@ -1,47 +1,56 @@
-import { promises as fs } from 'fs'
-import * as path from 'path'
 import * as http from 'http'
+import { responseForPath } from './responseForPath'
 
-export const requestHandler = (hostname: string) => async (
-	request: http.IncomingMessage,
-	response: http.ServerResponse,
-) => {
-	// Start page returns a 4040
-	if (request.url === '/') {
-		response.writeHead(404, {
-			'Content-Type': 'application/json',
-		})
-		response.end()
-		return
+export const requestHandler = (hostname: string) => {
+	const p = handlePath(hostname)
+	return async (
+		request: http.IncomingMessage,
+		response: http.ServerResponse,
+	) => {
+		const res = await p(request.url)
+		response.writeHead(res.statusCode, res.headers)
+		response.end(res.body)
+	}
+}
+
+export const handlePath = (hostname: string) => async (
+	resource?: string,
+): Promise<{
+	statusCode: number
+	headers: { [key: string]: any }
+	body: string
+}> => {
+	if (resource === undefined || resource === '/') {
+		// Start page returns a 404
+		return {
+			statusCode: 404,
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: '',
+		}
 	}
 	try {
-		const folders = request.url?.substr(1).split('/') ?? []
-		const fileName = folders.pop()
-		const f = path.join(
-			__dirname,
-			'..',
-			'sandbox',
-			...folders,
-			`${fileName}.json`,
-		)
-		const file = await fs.readFile(f, 'utf-8')
-		response.writeHead(200, {
-			'Content-Type': 'application/json; charset=utf-8',
-		})
-		response.end(
-			file.replace(
+		const file = await responseForPath(resource)
+		return {
+			statusCode: 200,
+			headers: {
+				'Content-Type': 'application/json; charset=utf-8',
+			},
+			body: file.replace(
 				new RegExp('https://flexport-sandbox.example.com', 'g'),
 				hostname,
 			),
-		)
+		}
 	} catch (error) {
 		// Unknown URLs return a redirect to /
-		response.writeHead(302, {
-			'Content-Type': 'text/html; charset=utf-8',
-			Location: `${hostname}/`,
-		})
-		response.end(
-			`<html><body>You are being <a href="${hostname}/">redirected</a>.</body></html>`,
-		)
+		return {
+			statusCode: 302,
+			headers: {
+				'Content-Type': 'text/html; charset=utf-8',
+				Location: `${hostname}/`,
+			},
+			body: `<html><body>You are being <a href="${hostname}/">redirected</a>.</body></html>`,
+		}
 	}
 }
