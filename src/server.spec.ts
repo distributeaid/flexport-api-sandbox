@@ -65,4 +65,18 @@ describe('Flexport API Sandbox', () => {
 			],
 		})
 	})
+	it('paginates', async () => {
+		const res1 = await fetch(`${hostname}/shipments`, { headers })
+		const {
+			data: { next: next1, prev: prev1 },
+		} = await res1.json()
+		expect(next1).toEqual(`${hostname}/shipments?page=2&per=10`)
+		expect(prev1).toBeNull()
+		const res2 = await fetch(next1, { headers })
+		const {
+			data: { next: next2, prev: prev2 },
+		} = await res2.json()
+		expect(prev2).toEqual(`${hostname}/shipments?page=1&per=10`)
+		expect(next2).toEqual(`${hostname}/shipments?page=3&per=10`)
+	})
 })
