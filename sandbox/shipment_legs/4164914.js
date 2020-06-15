@@ -1,0 +1,108 @@
+module.exports = {
+	_object: '/api/response',
+	self: 'https://api.flexport.com/shipment_legs/4164914',
+	version: 2,
+	data: {
+		_object: '/shipment_leg',
+		id: 4164914,
+		shipment: {
+			_object: '/api/refs/object',
+			ref_type: '/shipment',
+			link: 'https://api.flexport.com/shipments/504720',
+			id: 504720,
+		},
+		estimated_arrival_date: '2019-03-27T12:00:00.000-07:00',
+		actual_arrival_date: null,
+		estimated_departure_date: '2019-03-20T12:00:00.000+08:00',
+		actual_departure_date: null,
+		cargo_ready_date: null,
+		additional_dates: {},
+		origin: {
+			_object: '/shipment_node',
+			tags: ['port_of_loading'],
+			place: {
+				_object: '/place',
+				name: 'Hong Kong, Hong Kong',
+				address: {
+					_object: '/address',
+					street_address: null,
+					street_address2: null,
+					city: 'Hong Kong',
+					state: null,
+					country: 'Hong Kong',
+					country_code: 'HK',
+					zip: null,
+					unlocode: 'HKHKG',
+					timezone: 'Asia/Hong_Kong',
+					ref: 'id-38384',
+				},
+				details: [
+					{
+						_object: '/trucking/port',
+						port_code: '58201',
+					},
+					{
+						_object: '/ocean/port',
+						port_code: '58201',
+					},
+				],
+			},
+			terminal: null,
+		},
+		destination: {
+			_object: '/shipment_node',
+			tags: ['fmc_port_of_unloading'],
+			place: {
+				_object: '/place',
+				name: 'Vancouver, Canada',
+				address: {
+					_object: '/address',
+					street_address: null,
+					street_address2: null,
+					city: 'Vancouver',
+					state: 'BC',
+					country: 'Canada',
+					country_code: 'CA',
+					zip: null,
+					unlocode: 'CAVAN',
+					timezone: 'America/Vancouver',
+					ref: 'id-36156',
+				},
+				details: [
+					{
+						_object: '/ocean/railport',
+						port_code: '12493',
+					},
+					{
+						_object: '/trucking/port',
+						port_code: '12493',
+					},
+					{
+						_object: '/ocean/port',
+						port_code: '12493',
+					},
+				],
+			},
+			terminal: null,
+		},
+		transportation_mode: 'ocean',
+		carrier_name: 'APM-Maersk',
+		ocean_leg: {
+			_object: '/ocean/shipment_leg',
+			scac_code: 'MAEU',
+			vessel_name: 'SEAMELODY',
+			vessel_imo: '9400112',
+			voyage_number: '39',
+			container_legs: {
+				_object: '/api/refs/collection',
+				ref_type: '/ocean/shipment_container_leg',
+				link:
+					'https://api.flexport.com/ocean/shipment_container_legs?f.leg.id=4164914',
+			},
+		},
+		air_leg: null,
+		trucking_leg: null,
+		rail_leg: null,
+	},
+	error: null,
+}
