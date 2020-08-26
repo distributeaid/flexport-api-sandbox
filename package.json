@@ -48,7 +48,7 @@
     "@types/whatwg-fetch": "0.0.33",
     "check-node-version": "4.0.3",
     "husky": "4.2.5",
-    "jest": "26.0.1",
+    "jest": "26.4.2",
     "node-fetch": "2.6.0",
     "ts-jest": "26.1.0",
     "typescript": "3.9.5",
