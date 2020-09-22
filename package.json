@@ -43,7 +43,7 @@
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-angular": "11.0.0",
     "@types/jest": "26.0.14",
-    "@types/node": "14.11.1",
+    "@types/node": "14.11.2",
     "@types/node-fetch": "2.5.7",
     "@types/whatwg-fetch": "0.0.33",
     "check-node-version": "4.0.3",
